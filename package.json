@@ -1,0 +1,16 @@
+{
+    "name": "simple-socket-io-app"
+  , "description": "Socket.io Realtime Core App"
+  , "version": "0.0.1"
+  , "dependencies": {
+        "express": "2.5.5"
+      , "jade": "0.16.4"
+      , "stylus": "0.19.0"
+      , "nib": "0.2.0"
+      , "socket.io": "0.9.1-1"
+      , "cors" : "2.7.1"
+    }
+  , "engines": {
+    "node": "0.10.x"    
+  }
+}

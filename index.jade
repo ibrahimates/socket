@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    meta(charset='utf-8')   
+    script(src='//code.jquery.com/jquery-1.12.0.min.js')
+    script(src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(src='/socket.io/socket.io.js')
+    script
+      // socket.io specific code
+      var socket = io.connect();
+
+      socket.on('connect', function () {
+        console.log("Connected!");
+      });      
+
+      function newmessage (from, msg) {
+        $('#chat').append($('<div>'+msg+'</div>');
+      }
+      socket.on('message', newmessage); 
+
+     
+  body
+    h1
+     Nodejs & Socket.Io App
+    #chat
+      
