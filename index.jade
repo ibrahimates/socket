@@ -13,7 +13,7 @@ html
         console.log("Connected!");
       });      
 
-      function newmessage (from, msg) {
+      function newmessage (msg) {
         $('#chat').append($('<div>'+msg+'</div>'));
       }
       socket.on('message', newmessage); 
