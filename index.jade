@@ -14,13 +14,11 @@ html
       });      
 
       function newmessage (from, msg) {
-        $('#chat').append($('<div>'+msg+'</div>');
+        $('#chat').append($('<div>'+msg+'</div>'));
       }
       socket.on('message', newmessage); 
 
      
-  body
-    h1
-     Nodejs & Socket.Io App
-    #chat
+  body 
+     #chat
       
